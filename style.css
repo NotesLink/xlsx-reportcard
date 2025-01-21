@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .3s linear;
+    scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: fit-content;
+    display: block;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: .5px solid #000;
+    border-spacing: 0;
+}
+
+td,
+th {
+    border: 1px solid #000;
+    margin: 0;
+    font-size: inherit;
+    padding: 3px;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+    width: 30vmin;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    width: 10vmin;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    width: 10vmin;
+}
+
+.logo {
+    width: 75vmin;
+    padding: 2vmin;
+}
+
+.page-title {
+    width: 100%;
+    text-align: center;
+    line-height: 1.75em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.student-details {
+    margin: .25em;
+    font-size: 1.5em;
+}
+
+p {
+    page-break-after: always;
+}
+
+.page-footer-item {
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+@media print {
+    .print-hide {
+        display: none;
+    }
+}

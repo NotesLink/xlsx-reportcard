@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLSX => Report Card</title>
+    <!--main stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--chart stylesheet-->
+    <link rel="stylesheet" href="chart/score-based-colours/chart.css">
+    <!--zip file extractor library-->
+    <script src="lib/jszip.js"></script>
+    <!--excel xml parser library-->
+    <script src="lib/xlsx.js"></script>
+    <!--configuration file-->
+    <script src="config.js"></script>
+    <!--script containing element generator classes-->
+    <script src="lib/element-classes.js"></script>
+    <!--script containing excel parser function-->
+    <script src="lib/excel-parser.js"></script>
+    <!--script containing renderer function-->
+    <script src="lib/render.js"></script>
+    <!--script containing chart generator class-->
+    <script src="chart/score-based-colours/chart.js"></script>
+    <!--script containing chart configuration-->
+    <script src="chart/score-based-colours/chartconfig.js"></script>
+</head>
+
+<body>
+    <input type="file" name="l" id="f" onchange="parseExcel(this.files[0])" class="print-hide">
+    <div id="contentdiv"></div>
+</body>
+
+</html>
